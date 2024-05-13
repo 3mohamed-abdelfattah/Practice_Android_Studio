@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ProjectOne</string>
+    <string name="go_back">Go Back</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="call_me">Call ME</string>
+    <string name="go_github">Go GitHub</string>
+    <string name="go_to_next_page">Go To Next Page</string>
+</resources>
