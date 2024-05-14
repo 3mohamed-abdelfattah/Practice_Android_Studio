@@ -10,4 +10,5 @@
     <string name="fragment_two">Fragment Two</string>
     <string name="go_fragment">GO Fragment</string>
     <string name="page_2">Page 2</string>
+    <string name="change_screen">Change Screen</string>
 </resources>
