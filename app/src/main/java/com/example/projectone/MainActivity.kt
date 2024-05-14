@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.nextV.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse("https://github.com/3mohamed-abdelfatt")
+            intent.data = Uri.parse("https://github.com/3mohamed-abdelfattah")
             startActivity(intent)
         }
 
