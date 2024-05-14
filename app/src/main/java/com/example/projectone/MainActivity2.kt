@@ -1,5 +1,6 @@
 package com.example.projectone
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.enableEdgeToEdge
@@ -23,6 +24,7 @@ class MainActivity2 : AppCompatActivity() {
         binding.textView2.text = name
 
         backStep()
+        goFragment()
 
         Log.d(MainActivity2.LOG_TAG, "On Create")
 
@@ -72,6 +74,13 @@ class MainActivity2 : AppCompatActivity() {
     private fun backStep() {
         binding.backB.setOnClickListener {
             finish()
+        }
+    }
+
+    private fun goFragment() {
+        binding.goF.setOnClickListener {
+            val intent2 = Intent(this, MainActivity3::class.java)
+            startActivity(intent2)
         }
     }
 }
