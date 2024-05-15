@@ -15,6 +15,15 @@
         android:theme="@style/Theme.ProjectOne"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivityFloatingActionButton"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MainActivityImage"
             android:exported="true">
             <intent-filter>
