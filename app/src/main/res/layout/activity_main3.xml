@@ -12,6 +12,7 @@
         android:id="@+id/FragmentView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomnavigation"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="64dp" />
 
@@ -19,24 +20,33 @@
         android:id="@+id/back_frag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="112dp"
+        android:layout_marginTop="32dp"
         android:text="@string/change_screen"
-        app:layout_constraintBottom_toBottomOf="@+id/FragmentView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.898"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="@id/remove_frag"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/remove_frag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="112dp"
+        android:layout_marginTop="32dp"
         android:text="@string/remove_screen"
-        app:layout_constraintBottom_toBottomOf="@+id/FragmentView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintEnd_toEndOf="@id/back_frag"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelVisibilityMode="selected"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/main_bottom_nav" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

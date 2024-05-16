@@ -14,14 +14,43 @@ class MainActivity3 : AppCompatActivity() {
 
     val myFirstFramgment = fragment_One()
     val mySecoundFramgment = fragment_two()
+    lateinit var binding: ActivityMain3Binding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding = ActivityMain3Binding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main3)
+        setContentView(binding.root)
 
+        navigateToBottom()
         initButton()
         initView()
 
+    }
+
+    //Bottom Navigation Actions
+    private fun navigateToBottom() {
+        binding.bottomnavigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.item1 -> {
+                    replaceFragment(myFirstFramgment)
+                    true
+                }
+
+                R.id.item2 -> {
+                    replaceFragment(mySecoundFramgment)
+                    true
+                }
+
+                R.id.item3 -> {
+                    replaceFragment(myFirstFramgment)
+                    true
+                }
+
+                else -> {
+                    false
+                }
+            }
+        }
     }
 
     //To Get Button And Go Second Fragment
