@@ -2,6 +2,8 @@ package com.example.projectone
 
 import android.content.DialogInterface
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
@@ -32,6 +34,22 @@ class MainActivityFloatingActionButton : AppCompatActivity() {
         }
     }
 
+    //To View Menu Bar Selection
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_drops, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.menu1 -> Toast.makeText(this, "Deleted", Toast.LENGTH_SHORT).show()
+            R.id.menu2 -> Toast.makeText(this, "Added", Toast.LENGTH_SHORT).show()
+            R.id.menu3 -> Toast.makeText(this, "Shared", Toast.LENGTH_SHORT).show()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    //Show Alert Notifications
     private fun showAlert() {
         val builder = AlertDialog.Builder(this)
         builder.apply {
