@@ -9,6 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.replace
 import com.example.projectone.databinding.ActivityMain3Binding
+import com.google.android.material.tabs.TabLayout
 
 class MainActivity3 : AppCompatActivity() {
 
