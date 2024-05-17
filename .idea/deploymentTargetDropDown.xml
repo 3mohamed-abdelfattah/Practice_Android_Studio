@@ -37,9 +37,6 @@
       <entry key="MainActivity (1)">
         <State />
       </entry>
-      <entry key="MainActivity3">
-        <State />
-      </entry>
       <entry key="MainActivityFloatingActionButton">
         <State>
           <targetSelectedWithDropDown>
@@ -70,6 +67,22 @@
             </Target>
           </targetSelectedWithDropDown>
           <timeTargetWasSelectedWithDropDown value="2024-05-13T17:36:14.262858400Z" />
+        </State>
+      </entry>
+      <entry key="recycler_view_template">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\MOHAMED\.android\avd\Pixel_8_Pro_API_VanillaIceCream.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-05-17T15:26:20.979390600Z" />
         </State>
       </entry>
     </value>
