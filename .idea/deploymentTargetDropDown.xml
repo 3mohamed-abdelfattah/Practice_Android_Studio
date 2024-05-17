@@ -2,7 +2,39 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="MainActivity">
+      <entry key="DrawerLayout">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\MOHAMED\.android\avd\Pixel_8_Pro_API_VanillaIceCream.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-05-17T03:47:59.067967800Z" />
+        </State>
+      </entry>
+      <entry key="DrawerLayout (1)">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\MOHAMED\.android\avd\Pixel_8_Pro_API_VanillaIceCream.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-05-17T03:48:49.274045Z" />
+        </State>
+      </entry>
+      <entry key="MainActivity (1)">
         <State />
       </entry>
       <entry key="MainActivity3">
@@ -23,9 +55,6 @@
           </targetSelectedWithDropDown>
           <timeTargetWasSelectedWithDropDown value="2024-05-16T05:29:51.257333200Z" />
         </State>
-      </entry>
-      <entry key="MainActivityImage">
-        <State />
       </entry>
       <entry key="app">
         <State>
